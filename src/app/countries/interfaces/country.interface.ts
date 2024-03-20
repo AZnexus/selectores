@@ -1,10 +1,16 @@
 
 export enum Region {
-  Africa = 'Africa',
-  Americas = 'Americas',
-  Asia = 'Asia',
-  Europe = 'Europe',
-  Oceania = 'Oceania'
+  Africa        = 'Africa',
+  Americas      = 'Americas',
+  Asia          = 'Asia',
+  Europe        = 'Europe',
+  Oceania       = 'Oceania'
+}
+
+export interface SmallCountry { // El Country te tantes dades que millor implementar una interface nova amb les dades basiques que necessitaré per al selector
+  name:         string;
+  cca3:         string;
+  borders:      string[];
 }
 
 export interface Country {
@@ -153,10 +159,10 @@ export enum Status {
 }
 
 export enum Subregion {
-  CentralEurope = "Central Europe",
-  EasternEurope = "Eastern Europe",
-  NorthernEurope = "Northern Europe",
+  CentralEurope   = "Central Europe",
+  EasternEurope   = "Eastern Europe",
+  NorthernEurope  = "Northern Europe",
   SoutheastEurope = "Southeast Europe",
-  SouthernEurope = "Southern Europe",
-  WesternEurope = "Western Europe",
+  SouthernEurope  = "Southern Europe",
+  WesternEurope   = "Western Europe",
 }
